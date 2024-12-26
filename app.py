@@ -20,7 +20,6 @@ def fetch_poster(movie_id):
 if __name__ == "__main__":
     import os
     port = int(os.getenv("PORT", 8501))  # Render will assign a port
-    streamlit run app.py --server.port {port}
 
 
 
