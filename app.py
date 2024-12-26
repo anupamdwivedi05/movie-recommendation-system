@@ -17,6 +17,10 @@ def fetch_poster(movie_id):
     except requests.exceptions.RequestException as e:
         st.error(f"Error fetching poster: {e}")
         return None
+if __name__ == "__main__":
+    import os
+    port = int(os.getenv("PORT", 8501))  # Render will assign a port
+    streamlit run app.py --server.port {port}
 
 
 
